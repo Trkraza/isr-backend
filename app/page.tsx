@@ -63,9 +63,11 @@
 //     </div>
 //   );
 // }
+
 import Link from 'next/link'
 import { ArrowRight, Database, Zap, BarChart3 } from 'lucide-react'
 import { getStats } from '@/lib/kv'
+export const dynamic = 'force-dynamic'
 
 export default async function HomePage() {
   const stats = await getStats()
